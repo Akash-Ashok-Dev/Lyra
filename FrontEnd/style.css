@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: linear-gradient(45deg, #a78bfa, #06b6d4);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  max-width: 1250px;
+  margin: auto;
+}
+
+#lyra {
+  color: aqua;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+#playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 1rem;
+}
+
+.playlist {
+  transition: 0.3s;
+}
+
+.playlist:hover{
+  transform: translateY(-5px);
+  
+}
+
+.playlistTitle{
+  color: #a78bfa;
+}
+
+#RockNRollSongs {
+  display: none; /* hidden initially */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.songsGrid {
+  display: grid;
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50rem;
+  height: 35rem;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.song {
+  color: #ddd;
+}
+
+.btnGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 10fr); 
+  gap: 1rem;
+}
+
+.addBtn {
+  display: block; 
+  background-color: #34d399;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 4px 8px rgba(52, 211, 153, 0.4);
+  height: 3rem;
+  text-align: center;
+}
+
+.addBtn:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  color: #e0fcef;
+  border-color: 2px solid #6ee7b7;
+  background-color: #10b981;
+}
+
+.closeBtn {
+  display: block; 
+  background-color: #f87171;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 4px 8px rgba(248, 113, 113, 0.4);
+  height: 3rem;
+  text-align: center;
+}
+
+.closeBtn:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  color: #ffe4e6;
+  border-color: 2px solid #fca5a5;
+  background-color: #ef4444;
+}
