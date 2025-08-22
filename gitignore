@@ -1,0 +1,5 @@
+/backend/.env
+/backend/venv/
+/backend/__pycache__/
+/frontend/node_modules/   # if you ever use node tools
+*.pyc
