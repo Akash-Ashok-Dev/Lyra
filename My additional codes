@@ -1,0 +1,10 @@
+My additional codes
+
+const url = "https://drive.google.com/file/d/1AbCdEfGhIjKlMnOp/view?usp=sharing";
+const fileId = url.split("/d/")[1].split("/")[0];  
+console.log(fileId); // 👉 "1AbCdEfGhIjKlMnOp"
+
+
+git remote add origin git@github.com:Akash-Ashok-Dev/Lyra.git
+git branch -M main
+git push -u origin main
